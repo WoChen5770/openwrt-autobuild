@@ -226,5 +226,5 @@ jobs:
           - 固件编译前最后一次➦[主源码](${{ env.REPO_URL }})更新记录
           - ${{ env.VERSION_INFO }}
           - 固件同步推送至docker_hub仓库jaycq/immortalwrt_multiple_ethports
-          - docker用的带常用软件包的immortalwrt固件
+          - 带常用软件的immortalwrt docker镜像
           - 使用方式请参考恩山帖子https://www.right.com.cn/forum/thread-8413705-1-1.html
