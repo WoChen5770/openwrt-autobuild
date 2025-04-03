@@ -19,7 +19,7 @@ env:
   UPLOAD_BIN_DIR: false
   FIRMWARE_RELEASE: true
   FIRMWARE_TAG: X86-64
-  DOCKER_REPO: jessekool/immortalwrt_multiple_ethports  # Docker 仓库名称
+  DOCKER_REPO: jaycq/immortalwrt_multiple_ethports  # Docker 仓库名称
   DOCKER_TAG: latest                                    # Docker 镜像标签
   TZ: Asia/Shanghai
 
@@ -217,11 +217,11 @@ jobs:
           - 💻 这是 ${{ env.FIRMWARE_TAG }} 平台使用的 immortalwrt 固件
           - ⚽ 固件源码: ${{ env.REPO_URL }}
           - 💝 源码分支: ${{ env.REPO_BRANCH }}
-          - 🌐 默认地址: 192.168.6.1
+          - 🌐 默认地址: 192.168.123.1
           - 🔑 默认密码: password
           ### 🧊 固件版本
           - 固件编译前最后一次➦[主源码](${{ env.REPO_URL }})更新记录
           - ${{ env.VERSION_INFO }}
-          - 固件同步推送至docker_hub仓库jessekool/immortalwrt_multiple_ethports
+          - 固件同步推送至docker_hub仓库jaycq/immortalwrt_multiple_ethports
           - docker用的带常用软件包的immortalwrt固件
           - 使用方式请参考恩山帖子https://www.right.com.cn/forum/thread-8413705-1-1.html

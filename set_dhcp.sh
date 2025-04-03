@@ -22,4 +22,4 @@ set_dhcp_off() {
 }
 
 # 调用函数
-set_dhcp_off
+#set_dhcp_off
