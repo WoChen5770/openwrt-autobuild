@@ -28,6 +28,10 @@ rm -rf feeds/packages/net/shadowsocks-rust
 rm -rf feeds/packages/net/xray-core
 rm -rf feeds/packages/utils/v2dat
 
+echo "更新golang版本为1.24"
+rm -rf feeds/packages/lang/golang
+git clone https://github.com/kenzok8/golang feeds/packages/lang/golang
+
 # remove_unwanted_packages() {
 #    local luci_packages=(
 #        "luci-app-passwall" "luci-app-smartdns" "luci-app-ddns-go" "luci-app-rclone"
